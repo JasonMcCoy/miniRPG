@@ -8,6 +8,8 @@
 
 import Foundation
 
-class Enemy {
+class Enemy: Character {
+    
+    
     
 }

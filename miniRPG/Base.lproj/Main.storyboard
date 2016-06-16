@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11103.10"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -19,13 +20,111 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="q0C-Bi-rnv"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ground" translatesAutoresizingMaskIntoConstraints="NO" id="npa-dp-fOg">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="239" id="LoV-w0-8O0"/>
+                                    <constraint firstAttribute="height" constant="52" id="PQh-HH-kCA"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ground" translatesAutoresizingMaskIntoConstraints="NO" id="v0f-aJ-J8k">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="239" id="5Kw-jw-bw3"/>
+                                    <constraint firstAttribute="height" constant="52" id="HeG-hL-Ka9"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ground" translatesAutoresizingMaskIntoConstraints="NO" id="1nB-v4-AxF">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="wlQ-D8-Y4c"/>
+                                    <constraint firstAttribute="width" constant="239" id="yBs-RY-2TY"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ground" translatesAutoresizingMaskIntoConstraints="NO" id="9Oj-mp-C3S">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="239" id="dw1-xe-dMd"/>
+                                    <constraint firstAttribute="height" constant="52" id="xaW-Nd-tP8"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="player" translatesAutoresizingMaskIntoConstraints="NO" id="A0Q-GT-TJS">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="LLm-2m-Nyn"/>
+                                    <constraint firstAttribute="width" constant="99" id="kRk-Yc-Pgv"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chest" translatesAutoresizingMaskIntoConstraints="NO" id="6tj-zC-Ktb">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="226" id="LtW-iA-Pq4"/>
+                                    <constraint firstAttribute="height" constant="233" id="ZVx-fu-1OI"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="enem1" translatesAutoresizingMaskIntoConstraints="NO" id="Br1-Bg-Sjr">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="282" id="lHY-WR-BLP"/>
+                                    <constraint firstAttribute="height" constant="236" id="r6D-Yt-5LY"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="print" translatesAutoresizingMaskIntoConstraints="NO" id="cwb-iO-tHu">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="323" id="1xd-xw-AB3"/>
+                                    <constraint firstAttribute="height" constant="49" id="uUF-rw-bY2"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Player attacked wild TROLL!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="waV-zs-wqf">
+                                <frame key="frameInset" minX="46" minY="16" width="283" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="283" id="day-5J-Or3"/>
+                                    <constraint firstAttribute="height" constant="21" id="jv1-Vv-kqg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <color key="textColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100 HP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oU3-x6-2GX">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Dxc-8e-agG"/>
+                                    <constraint firstAttribute="width" constant="58" id="ocL-w7-H5Z"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="0.40000000600000002" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100 HP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6gL-bl-pGC">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="58" id="Gls-7i-ry8"/>
+                                    <constraint firstAttribute="height" constant="21" id="X8Y-cr-1FM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="A0Q-GT-TJS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="7" id="5e8-zt-6Vg"/>
                             <constraint firstItem="q0C-Bi-rnv" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="GMC-qu-HW0"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="v0f-aJ-J8k" secondAttribute="bottom" id="L7p-Pc-sAh"/>
+                            <constraint firstItem="v0f-aJ-J8k" firstAttribute="top" secondItem="oU3-x6-2GX" secondAttribute="bottom" constant="109" id="NnY-c4-hNp"/>
+                            <constraint firstItem="cwb-iO-tHu" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="3" id="R6J-0b-CO0"/>
+                            <constraint firstAttribute="trailing" secondItem="Br1-Bg-Sjr" secondAttribute="trailing" constant="-1" id="RWh-HW-gLW"/>
+                            <constraint firstItem="oU3-x6-2GX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="60" id="Rdr-cc-jR1"/>
+                            <constraint firstItem="9Oj-mp-C3S" firstAttribute="top" secondItem="Br1-Bg-Sjr" secondAttribute="bottom" constant="2" id="SHt-MI-cOs"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="npa-dp-fOg" secondAttribute="bottom" id="T5q-Tb-XjX"/>
+                            <constraint firstItem="waV-zs-wqf" firstAttribute="centerX" secondItem="cwb-iO-tHu" secondAttribute="centerX" id="TOv-3i-tRK"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="A0Q-GT-TJS" secondAttribute="bottom" constant="51" id="Vrj-6Z-8ih"/>
+                            <constraint firstItem="v0f-aJ-J8k" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="121" id="XiT-OB-M2P"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="6gL-bl-pGC" secondAttribute="trailing" constant="180" id="c2c-Fn-1JH"/>
+                            <constraint firstItem="npa-dp-fOg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="coK-qk-AwX"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="9Oj-mp-C3S" secondAttribute="bottom" id="cwr-Be-D1r"/>
+                            <constraint firstItem="oU3-x6-2GX" firstAttribute="top" secondItem="6gL-bl-pGC" secondAttribute="bottom" constant="47" id="f5V-Ot-jus"/>
+                            <constraint firstItem="1nB-v4-AxF" firstAttribute="leading" secondItem="npa-dp-fOg" secondAttribute="trailing" id="gPd-NB-5Rt"/>
+                            <constraint firstAttribute="trailing" secondItem="6tj-zC-Ktb" secondAttribute="trailing" constant="7" id="hLe-Rk-YZl"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="6tj-zC-Ktb" secondAttribute="bottom" constant="51" id="hMg-Ec-AIP"/>
                             <constraint firstAttribute="trailing" secondItem="q0C-Bi-rnv" secondAttribute="trailing" id="k1z-IE-B82"/>
                             <constraint firstItem="q0C-Bi-rnv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="pC3-5z-IFO"/>
+                            <constraint firstItem="9Oj-mp-C3S" firstAttribute="leading" secondItem="npa-dp-fOg" secondAttribute="trailing" constant="116" id="qLU-gK-9KF"/>
+                            <constraint firstItem="waV-zs-wqf" firstAttribute="centerY" secondItem="cwb-iO-tHu" secondAttribute="centerY" id="s3n-gP-WhY"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="q0C-Bi-rnv" secondAttribute="bottom" id="t6l-aR-5CQ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="1nB-v4-AxF" secondAttribute="bottom" id="tYj-dr-IZq"/>
+                            <constraint firstItem="cwb-iO-tHu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vET-Im-Q7P"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -36,5 +135,10 @@
     </scenes>
     <resources>
         <image name="bg" width="1024" height="768"/>
+        <image name="chest" width="393" height="440"/>
+        <image name="enem1" width="574" height="487"/>
+        <image name="ground" width="768" height="164"/>
+        <image name="player" width="356" height="475"/>
+        <image name="print" width="550" height="83"/>
     </resources>
 </document>

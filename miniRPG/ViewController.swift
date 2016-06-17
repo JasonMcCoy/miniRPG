@@ -18,6 +18,8 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var enemyImg: UIImageView!
     
+    @IBOutlet weak var enemyImg2: UIImageView!
+    
     @IBOutlet weak var chestBtn: UIButton!
     
     var player: Player!
@@ -28,7 +30,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        player = Player(name: "dedsxy", hp: 100, attackPwr: 10)
+        player = Player(name: "dedsxy", hp: 100, attackPwr: 20)
         
         generateRandomEnemy()
         
@@ -40,12 +42,16 @@ class ViewController: UIViewController {
         let rand = Int(arc4random_uniform(2))
         
         if rand == 0 {
-            enemy = Kimara(startingHp: 50, attackPwr: 12)
+            enemy = Kimara(startingHp: 200, attackPwr: 12)
+            enemyImg.isHidden = true
+            enemyImg2.isHidden = false
         } else {
-            enemy = DevilWizard(startingHp: 60, attackPwr: 15)
+            enemy = DevilWizard(startingHp: 100, attackPwr: 15)
+            enemyImg.isHidden = false
+            enemyImg2.isHidden = true
         }
         
-        enemyImg.isHidden = false
+        //enemyImg.isHidden = false
         
     }
     
@@ -57,10 +63,10 @@ class ViewController: UIViewController {
     
     @IBAction func attackedTapped(_ sender: AnyObject) {
         if enemy.attemptAttack(attackPwr: player.attackPwr) {
-            printLbl.text = "Attacked \(enemy.type) for \(player.attackPwr) HP"
+            printLbl.text = "Attacked \(enemy.type) for \(player.attackPwr) HP!"
             enemyHpLbl.text = "\(enemy.hp) HP"
         } else {
-            printLbl.text = "Attack was unsuccessful"
+            printLbl.text = "Attack was unsuccessful! GG lol."
         }
         
         if let loot = enemy.dropLoot() {
@@ -71,8 +77,9 @@ class ViewController: UIViewController {
         
         if !enemy.isAlive {
             enemyHpLbl.text = ""
-            printLbl.text = "Killed \(enemy.type)"
+            printLbl.text = "Killed \(enemy.type)!"
             enemyImg.isHidden = true
+            enemyImg2.isHidden = true
         }
         
     }

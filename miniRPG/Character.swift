@@ -15,7 +15,7 @@ class Character {
     
     var attackPwr: Int {
         get {
-            return _hp
+            return _attackPwr
         }
     }
     

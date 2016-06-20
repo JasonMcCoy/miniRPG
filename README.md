@@ -13,3 +13,7 @@ Lookin' good so far eh?
 
 Well, here is a brief snippet of my code/storyboard (showing off the beautiful xcode beta 8!)
 ![alt tag](http://mccoygames.com/wp-content/uploads/2016/06/Screen-Shot-2016-06-17-at-11.22.09-AM.png)
+
+
+All Photo(s) by Jason McCoy / CC BY
+http://creativecommons.org/licenses/by/2.0/
